@@ -3,8 +3,6 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
 	http://maven.apache.org/maven-v4_0_0.xsd">
 	
-	<modelVersion>4.0.0</modelVersion>
-	
 	<dependency>
 		<groupId>freemarker</groupId>
 		<artifactId>freemarker</artifactId>
@@ -40,14 +38,10 @@
 				<artifactId>maven-surefire-report-plugin</artifactId>
 				<version>3.0.0-M5</version>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>3.1.1</version>
-			</plugin>
 		</plugins>
 	</reporting>
-	
+
+	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>put.io</groupId>
 	<artifactId>BankZbozowyApp</artifactId>
@@ -65,11 +59,11 @@
 				<artifactId>jetty-maven-plugin</artifactId>
 				<version>9.4.7.v20170914</version>
 				<configuration>
-				<contextPath>/</contextPath>
-				<scanIntervalSeconds>10</scanIntervalSeconds>
-				<httpConnector>
-				<port>9091</port>
-				</httpConnector>
+					<contextPath>/</contextPath>
+					<scanIntervalSeconds>10</scanIntervalSeconds>
+					<httpConnector>
+					<port>9091</port>
+					</httpConnector>
 				</configuration>
 			</plugin>
 		</plugins>
